@@ -887,8 +887,9 @@ void renderMain() {
 
     const double tHoldContextPopup = 0.2f;
 
-    const int kMaxInputSize = 140;
+    const int kMaxInputSize = 132;
     static char inputBuf[kMaxInputSize];
+    static char finalBuf[140];
     static char callsign[8];
 
     static bool doInputFocus = false;
@@ -1738,10 +1739,14 @@ void renderMain() {
                 strncpy(inputBuf, inputLast.data(), kMaxInputSize - 1);
             }
             if (inputBuf[0] != 0) {
-                inputLast = std::string(inputBuf);
+		//VK
+		strcpy(finalBuf,callsign); 
+		strcat(finalBuf,":"); 
+		strcat(finalBuf,inputBuf); 
+                inputLast = std::string(finalBuf);
                 g_buffer.inputUI.update = true;
                 g_buffer.inputUI.flags.newMessage = true;
-                g_buffer.inputUI.message = { false, std::chrono::system_clock::now(), std::string(inputBuf), settings.protocolId, settings.directSequenceSpread, settings.volume, Message::Text };
+                g_buffer.inputUI.message = { false, std::chrono::system_clock::now(), std::string(finalBuf), settings.protocolId, settings.directSequenceSpread, settings.volume, Message::Text };
 
                 messageHistory.push_back(g_buffer.inputUI.message);
 
