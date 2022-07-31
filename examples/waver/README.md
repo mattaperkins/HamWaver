@@ -1,3 +1,9 @@
+# HamWaver 
+Fork of the orginal waver to make it more friendly for Ham Radio communication over FM
+Matt Perkins VK2FLY 
+
+
+
 # Waver
 
 Waver allows you to send and receive text messages from nearby devices through sound waves.
