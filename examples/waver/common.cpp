@@ -889,6 +889,7 @@ void renderMain() {
 
     const int kMaxInputSize = 140;
     static char inputBuf[kMaxInputSize];
+    static char callsign[8];
 
     static bool doInputFocus = false;
     static bool doSendMessage = false;
@@ -1141,7 +1142,7 @@ void renderMain() {
             ImGui::SetCursorScreenPos({ posSave.x + kLabelWidth, posSave.y });
             //ImGui::TextDisabled("[U] = ultrasound"); - unused U in hamwaver 
 	    //Future Callsign Input 
-            ImGui::InputText("", inputBuf, IM_ARRAYSIZE(inputBuf));
+            ImGui::InputText("", callsign,8 );
 
         }
         {
