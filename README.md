@@ -22,6 +22,9 @@ Matt VK2FLY
 
 This project is very beta and is currently under test among a small group of operators. As such the doco is fairly slim. See the original project at https://github.com/ggerganov/ggwave for other info. 
 
+If you would like to test with us and you are in Sydney Give me a call on VK2RBV - Note that I will likely be pushing code many times a day  until I get some of the initital features tested. 
+
+
 ## Building
 
 ### Dependencies for SDL-based examples
