@@ -39,7 +39,7 @@ This project is very beta and is currently under test among a small group of ope
 
 ```bash
 # build
-git clone https://github.com/ggerganov/ggwave --recursive
+git clone https://github.com/mattaperkins/HamWaver --recursive
 cd ggwave && mkdir build && cd build
 cmake ..
 make
