@@ -210,7 +210,7 @@ int main(int argc, char** argv) {
     //int windowX = scale*570;
     //int windowY = scale*917;
 
-    const char * windowTitle = "Waver";
+    const char * windowTitle = "HamWaver";
 
 #ifdef __EMSCRIPTEN__
     SDL_Renderer * renderer;

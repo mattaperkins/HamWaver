@@ -1068,7 +1068,7 @@ void renderMain() {
 
     if (windowId == WindowId::Settings) {
         ImGui::BeginChild("Settings:main", ImGui::GetContentRegionAvail(), true, ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
-        ImGui::Text("Waver v1.5.3");
+        ImGui::Text("HamWaver v1.0.0 beta");
         ImGui::Separator();
 
         ImGui::Text("%s", "");
