@@ -861,6 +861,7 @@ void renderMain() {
     };
 
     struct Settings {
+	// Set default to GGWAVE_PROTOCOL_DT_FASTEST for Ham Radio FM Narrow 
         int protocolId = GGWAVE_PROTOCOL_DT_FASTEST;
         bool isSampleRateOffset = false;
         float sampleRateOffset = -512.0f;

@@ -27,10 +27,10 @@ int main() {
     const char * payload = "test";
     char decoded[16];
 
-    int n = ggwave_encode(instance, payload, 4, GGWAVE_PROTOCOL_AUDIBLE_FASTEST, 50, NULL, 1);
+    int n = ggwave_encode(instance, payload, 4, GGWAVE_PROTOCOL_DT_FASTEST, 50, NULL, 1);
     char waveform[n];
 
-    int ne = ggwave_encode(instance, payload, 4, GGWAVE_PROTOCOL_AUDIBLE_FASTEST, 50, waveform, 0);
+    int ne = ggwave_encode(instance, payload, 4, GGWAVE_PROTOCOL_DT_FASTEST, 50, waveform, 0);
     CHECK(ne > 0);
 
     // not enough output buffer size to store the decoded message
@@ -47,7 +47,7 @@ int main() {
 
     // disable Rx protocol
     {
-        ggwave_rxToggleProtocol(GGWAVE_PROTOCOL_AUDIBLE_FASTEST, 0);
+        ggwave_rxToggleProtocol(GGWAVE_PROTOCOL_DT_FASTEST, 0);
         ggwave_Instance instanceTmp = ggwave_init(parameters);
 
         ret = ggwave_ndecode(instanceTmp, waveform, ne, decoded, 4);
@@ -58,7 +58,7 @@ int main() {
 
     // enable Rx protocol
     {
-        ggwave_rxToggleProtocol(GGWAVE_PROTOCOL_AUDIBLE_FASTEST, 1);
+        ggwave_rxToggleProtocol(GGWAVE_PROTOCOL_DT_FASTEST,1);
         ggwave_Instance instanceTmp = ggwave_init(parameters);
 
         ret = ggwave_ndecode(instanceTmp, waveform, ne, decoded, 4);

@@ -19,6 +19,11 @@
 #define GGWAVE_CONFIG_FEW_PROTOCOLS
 #endif
 
+// for HamWaver we force GGWAVE_CONFIG_FEW_PROTOCOLS 
+// As only DT and MT will work reliabily on FM Narrow 
+#define GGWAVE_CONFIG_FEW_PROTOCOLS
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif

@@ -182,22 +182,22 @@ int main(int argc, char ** argv) {
 
         std::string payload = "hello";
 
-        CHECK(instance.init(payload.c_str(), GGWAVE_PROTOCOL_AUDIBLE_FAST));
+        CHECK(instance.init(payload.c_str(), GGWAVE_PROTOCOL_DT_FASTEST));
 
         // data
-        CHECK_F(instance.init(-1, "asd",   GGWAVE_PROTOCOL_AUDIBLE_FAST));
-        CHECK_T(instance.init(0,  nullptr, GGWAVE_PROTOCOL_AUDIBLE_FAST));
-        CHECK_T(instance.init(0,  "asd",   GGWAVE_PROTOCOL_AUDIBLE_FAST));
-        CHECK_T(instance.init(1,  "asd",   GGWAVE_PROTOCOL_AUDIBLE_FAST));
-        CHECK_T(instance.init(2,  "asd",   GGWAVE_PROTOCOL_AUDIBLE_FAST));
-        CHECK_T(instance.init(3,  "asd",   GGWAVE_PROTOCOL_AUDIBLE_FAST));
+        CHECK_F(instance.init(-1, "asd",   GGWAVE_PROTOCOL_DT_FASTEST));
+        CHECK_T(instance.init(0,  nullptr, GGWAVE_PROTOCOL_DT_FASTEST));
+        CHECK_T(instance.init(0,  "asd",   GGWAVE_PROTOCOL_DT_FASTEST));
+        CHECK_T(instance.init(1,  "asd",   GGWAVE_PROTOCOL_DT_FASTEST));
+        CHECK_T(instance.init(2,  "asd",   GGWAVE_PROTOCOL_DT_FASTEST));
+        CHECK_T(instance.init(3,  "asd",   GGWAVE_PROTOCOL_DT_FASTEST));
 
         // volume
-        CHECK_F(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_AUDIBLE_FAST, -1));
-        CHECK_T(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_AUDIBLE_FAST, 0));
-        CHECK_T(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_AUDIBLE_FAST, 50));
-        CHECK_T(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_AUDIBLE_FAST, 100));
-        CHECK_F(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_AUDIBLE_FAST, 101));
+        CHECK_F(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_DT_FASTEST, -1));
+        CHECK_T(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_DT_FASTEST, 0));
+        CHECK_T(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_DT_FASTEST, 50));
+        CHECK_T(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_DT_FASTEST, 100));
+        CHECK_F(instance.init(payload.size(), payload.c_str(), GGWAVE_PROTOCOL_DT_FASTEST, 101));
     }
 
     // playback / capture at different sample rates
