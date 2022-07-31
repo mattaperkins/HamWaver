@@ -6,6 +6,12 @@
 [![pypi](https://img.shields.io/pypi/v/ggwave.svg)](https://pypi.org/project/ggwave/)
 [![npm](https://img.shields.io/npm/v/ggwave.svg)](https://www.npmjs.com/package/ggwave/)
 
+HamWaver - 
+ A fork of ggerganov's ggwave library and util to make it a bit more friendly for Ham Radio users. 
+ All the hard work and thanks goes to Georgi Gerganov for their work on this great project. 
+ Matt VK2FLY
+
+
 Tiny data-over-sound library.
 
 Click on the images below to hear what it sounds like:
