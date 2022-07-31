@@ -1,4 +1,4 @@
-# ggwave
+# HamWaver
 
 [![Actions Status](https://github.com/ggerganov/ggwave/workflows/CI/badge.svg)](https://github.com/ggerganov/ggwave/actions)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -9,9 +9,18 @@
 HamWaver - 
  A fork of ggerganov's ggwave library and util to make it a bit more friendly for Ham Radio users. 
  All the hard work and thanks goes to Georgi Gerganov for their work on this great project. 
- Matt VK2FLY
+ <p>
+Matt VK2FLY
 
 
+
+
+
+<p>
+Original Readme bellow for now 
+<p>
+
+---
 Tiny data-over-sound library.
 
 Click on the images below to hear what it sounds like:
