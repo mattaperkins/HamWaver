@@ -44,13 +44,11 @@ cd ggwave && mkdir build && cd build
 cmake ..
 make
 
-# running
 ```
-./bin/waver
-```
-Then go into the cogs menu at the top left and enter your callsign. (note right now there is no way to wave and callisgn must be re-entered after restarting the app) 
-<p>
-Other settings can be left at their defaults. 
+### running
+```./bin/waver
+#Then go into the cogs menu at the top left and enter your callsign. (note right now there is no way to wave and callisgn must be re-entered after restarting the app) 
+#Other settings can be left at their defaults. 
 
 
 [license]: ./LICENSE
