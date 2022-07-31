@@ -861,7 +861,7 @@ void renderMain() {
     };
 
     struct Settings {
-        int protocolId = GGWAVE_PROTOCOL_AUDIBLE_FAST;
+        int protocolId = GGWAVE_PROTOCOL_DT_FASTEST;
         bool isSampleRateOffset = false;
         float sampleRateOffset = -512.0f;
         bool isFreqStartShift = false;
