@@ -47,6 +47,8 @@ char * toTimeString(const std::chrono::system_clock::time_point & tp) {
     return buffer;
 }
 
+
+
 bool ScrollWhenDraggingOnVoid(const ImVec2& delta, ImGuiMouseButton mouse_button) {
     ImGuiContext& g = *ImGui::GetCurrentContext();
     ImGuiWindow* window = g.CurrentWindow;
@@ -1132,12 +1134,15 @@ void renderMain() {
         }
 
         // tx protocol
-        ImGui::Text("%s", "");
+        ImGui::Text("Callsign: ");
         {
             auto posSave = ImGui::GetCursorScreenPos();
-            ImGui::Text("%s", "");
+            //ImGui::Text("%s", "");
             ImGui::SetCursorScreenPos({ posSave.x + kLabelWidth, posSave.y });
-            ImGui::TextDisabled("[U] = ultrasound");
+            //ImGui::TextDisabled("[U] = ultrasound"); - unused U in hamwaver 
+	    //Future Callsign Input 
+            ImGui::InputText("", inputBuf, IM_ARRAYSIZE(inputBuf));
+
         }
         {
             auto posSave = ImGui::GetCursorScreenPos();
