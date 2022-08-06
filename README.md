@@ -43,7 +43,7 @@ If you would like to test with us and you are in Sydney Give me a call on VK2RBV
 ```bash
 # build
 git clone https://github.com/mattaperkins/HamWaver --recursive
-cd ggwave && mkdir build && cd build
+cd HamWaver && mkdir build && cd build
 cmake ..
 make
 
